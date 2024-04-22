@@ -1,6 +1,5 @@
 # Angular-React-Vue
 curso avanzado, curso de Angular.
-# AngProj
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.5.
 
