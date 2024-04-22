@@ -1,2 +1,2 @@
 # Angular-React-Vue
-curso avanzado, primero curso de Angular
+curso avanzado, curso de Angular.
