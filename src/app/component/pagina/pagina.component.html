@@ -1,0 +1,45 @@
+<!-- [imageSize]="{width: 400, height: 200, space: 3}" -->
+<div style="padding: 0 10%;">
+  <ng-image-slider
+  [images]="imageObject"
+  #nav
+  [infinite]="true"
+  [imagePopup]="true"
+  [animationSpeed]="2"
+  [slideImage]="1"
+  [manageImageRatio]="true"
+  [imageSize]="{width: 250, height: 200}"
+  [autoSlide]="true"
+  [showArrow]="true"
+  [arrowKeyMove]="true"
+  >
+  </ng-image-slider>
+</div>
+<!--  -->
+<!-- <div>Some tags before</div>
+<owl-carousel-o [options]="customOptions">
+  <ng-container *ngFor="let slide of slidesStore">
+    <ng-template carouselSlide [id]="slide.id">
+      <img [src]="slide.img" [alt]="slide.alt" [title]="slide.title">
+    </ng-template>
+  </ng-container>
+</owl-carousel-o>
+<div>Some tags after</div> -->
+<!--  -->
+<app-slider
+  [nombre]="titlePagina"
+></app-slider>
+<div class="center">
+  <section id="content">
+    <div *ngIf="valor1 && valor2">
+      <h3>valor uno: {{valor1}}</h3>
+      <h3>valor dos: {{valor2}}</h3>
+    </div>
+    <hr style="border: 1px solid red;" />
+    <button (click)="redireccion()">REDIRECCION</button>
+    <app-mi-componente></app-mi-componente>
+  </section>
+  <app-sidebar></app-sidebar>
+</div>
+
+

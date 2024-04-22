@@ -1,0 +1,13 @@
+<p>titulo: {{titulo}}</p>
+<p>Comenatrio: {{comentario}}</p>
+<p>Año: {{year}}</p>
+<hr>
+<button (click)="ocultarEventClick()">{{mostrarPeliculas ? "ocultarPeliculas": "mostrarPeliculas"}}</button>
+<hr>
+<div *ngIf="mostrarPeliculas; else noHayPeliculas">
+  <app-peliculas></app-peliculas>
+</div>
+<ng-template #noHayPeliculas>
+  <h1>No hay Peliculas</h1>
+</ng-template>
+
